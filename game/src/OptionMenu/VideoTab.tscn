@@ -89,24 +89,10 @@ layout_mode = 2
 tooltip_text = "OPTIONS_VIDEO_REFRESH_RATE_TOOLTIP"
 focus_neighbor_top = NodePath("../MonitorDisplaySelector")
 focus_neighbor_bottom = NodePath("../QualityPresetSelector")
-item_count = 8
+item_count = 1
 selected = 0
-popup/item_0/text = "VSYNC"
+popup/item_0/text = "MISSING"
 popup/item_0/id = 0
-popup/item_1/text = "30hz"
-popup/item_1/id = 1
-popup/item_2/text = "60hz"
-popup/item_2/id = 2
-popup/item_3/text = "90hz"
-popup/item_3/id = 3
-popup/item_4/text = "120hz"
-popup/item_4/id = 4
-popup/item_5/text = "144hz"
-popup/item_5/id = 5
-popup/item_6/text = "365hz"
-popup/item_6/id = 6
-popup/item_7/text = "Unlimited"
-popup/item_7/id = 7
 script = ExtResource("4_381mg")
 section_name = "video"
 setting_name = "refresh_rate"
@@ -140,3 +126,4 @@ default_selected = 1
 [connection signal="item_selected" from="VBoxContainer/GridContainer/ResolutionSelector" to="VBoxContainer/GridContainer/ResolutionSelector" method="_on_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/GridContainer/ScreenModeSelector" to="VBoxContainer/GridContainer/ScreenModeSelector" method="_on_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/GridContainer/MonitorDisplaySelector" to="VBoxContainer/GridContainer/MonitorDisplaySelector" method="_on_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/GridContainer/RefreshRateSelector" to="VBoxContainer/GridContainer/RefreshRateSelector" method="_on_item_selected"]
